@@ -3821,7 +3821,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 36,
-            autoHeight: true,
+            autoHeight: false,
             speed: 800,
             navigation: {
                 prevEl: ".swiper-button-prev",
@@ -4033,6 +4033,18 @@
             target.classList.add("active");
             input_choose.value = target.innerText;
         }
+    }));
+    const slides = document.querySelectorAll(".body-seekers__slide");
+    slides.forEach((el => {
+        el.addEventListener("click", (e => {
+            const {target} = e;
+            if (target.hasAttribute("data-more")) {
+                let slide_text = el.querySelector(".seekers-right__text");
+                slide_text.classList.toggle("active");
+                console.log(target.innerText);
+                if ("see more" == target.innerText) target.innerText = "see less"; else target.innerText = "see more";
+            }
+        }));
     }));
     window["FLS"] = true;
     isWebp();
