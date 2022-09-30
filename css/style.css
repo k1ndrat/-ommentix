@@ -697,6 +697,10 @@ body::after {
 .no-webp .investors-page{
   background-image: url(../img/bg_pc.png); }
 
+.investors-page {
+  background-size: 100% auto;
+}
+
 .tabs__top-block {
   color: #fff;
   margin-bottom: 4rem;
@@ -1877,6 +1881,12 @@ body::after {
   }
 }
 
+@media (max-width: 87.5em) {
+  .investors-page {
+    background-size: auto auto;
+  }
+}
+
 @media (max-width: 84.375em) {
   .item-article__left-content {
     -webkit-box-orient: vertical;
@@ -2098,6 +2108,10 @@ body::after {
 
   .no-webp .investors-page{
     background-image: url(../img/bg_tb.png); }
+
+  .investors-page {
+    background-size: auto auto;
+  }
 
   .investors-page__container {
     padding-top: 6.25rem;
@@ -2552,6 +2566,10 @@ body::after {
 
   .no-webp .investors-page{
     background-image: url(../img/bg_mb.png); }
+
+  .investors-page {
+    background-size: auto auto;
+  }
 
   .tabs__top-block {
     -webkit-box-orient: vertical;

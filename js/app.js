@@ -3992,14 +3992,14 @@
             const p = document.querySelector(".title-block__subtitle");
             const buttons = document.querySelectorAll(".right-top-footer__button");
             if ("Investors" == target.innerText) {
-                h.innerHTML = "Base of investors";
-                p.innerHTML = "4512 contacts";
+                h.innerHTML = document.querySelector(".title-block__title1").innerHTML;
+                p.innerHTML = document.querySelector(".title-block__subtitle1").innerHTML;
                 buttons.forEach((element => {
                     if (!element.hasAttribute("data-popup")) element.hidden = false; else element.hidden = true;
                 }));
             } else {
-                h.innerHTML = "Projects";
-                p.innerHTML = "112 contacts";
+                h.innerHTML = document.querySelector(".title-block__title2").innerHTML;
+                p.innerHTML = document.querySelector(".title-block__subtitle2").innerHTML;
                 buttons.forEach((element => {
                     if (!element.hasAttribute("data-popup")) element.hidden = true; else element.hidden = false;
                 }));
