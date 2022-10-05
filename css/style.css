@@ -1856,6 +1856,12 @@ body::after {
   }
 }
 
+@media (max-width: 120em) {
+  .investors-page {
+    background-size: auto auto;
+  }
+}
+
 @media (max-width: 75em) {
   .bottom-footer__sections {
     -webkit-box-flex: 0;
@@ -1878,12 +1884,6 @@ body::after {
   [class*=__container] {
     padding-left: 5.9375rem;
     padding-right: 5.9375rem;
-  }
-}
-
-@media (max-width: 87.5em) {
-  .investors-page {
-    background-size: auto auto;
   }
 }
 
@@ -3461,6 +3461,8 @@ body::after {
 
   .right-top-footer__export:hover {
     background-color: #dad7d7;
+    background-color: #1f8a70;
+    color: #ffffff;
   }
 
   .body-seekers__button:hover {
